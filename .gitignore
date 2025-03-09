@@ -1,4 +1,6 @@
 __pycache__/
+clients/__pycache__/
+clientSystems/__pycache__/
 *.pyc
 venv/
 db.sqlite3
