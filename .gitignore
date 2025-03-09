@@ -1,5 +1,7 @@
 __pycache__/
+*.pyc
 clients/__pycache__/
+*.pyc
 clientSystems/__pycache__/
 *.pyc
 venv/
