@@ -45,7 +45,6 @@ This is a Django-based application with a REST API for managing clients (alta, b
 1. **Clone the Repository** (after GitHub push):
    ```bash
    git clone https://github.com/sebovelan/clientSystem.git
-   cd clientSystem
 2. **Install requirement** :
    ```bash
    pip install requirements.txt
