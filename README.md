@@ -49,7 +49,7 @@ This is a Django-based application with a REST API for managing clients (alta, b
 2. **Install requirement** :
    ```bash
    pip install requirements.txt
-3. *** Run server ***
+3. **Run server**
    ```bash
    python manage.py runserver 
   
