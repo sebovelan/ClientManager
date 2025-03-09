@@ -15,8 +15,8 @@ This is a Django-based application with a REST API for managing clients (alta, b
 - **Load Balancing**: HAProxy on port `8080`, balancing Django instances.
 ## Project Structure
 
-* client_system/
-* ├── client_system/
+* clientSystem/
+* ├── clientSystem/
 * │   ├── init.py
 * │   ├── settings.py
 * │   ├── urls.py
