@@ -15,8 +15,8 @@ This is a Django-based application with a REST API for managing clients (alta, b
 - **Load Balancing**: HAProxy on port `8080`, balancing Django instances.
 ## Project Structure
 
-* client_system/
-* ├── client_system/
+* clientSystem/
+* ├── clientSystem/
 * │   ├── init.py
 * │   ├── settings.py
 * │   ├── urls.py
@@ -44,13 +44,12 @@ This is a Django-based application with a REST API for managing clients (alta, b
 ### Installation
 1. **Clone the Repository** (after GitHub push):
    ```bash
-   git clone https://github.com/yourusername/client_system.git
-   cd client_system
+   git clone https://github.com/sebovelan/clientSystem.git
 2. **Install requirement** :
    ```bash
    pip install requirements.txt
 3. **Run server**
    ```bash
-   python manage.py runserver 
+   python manage.py runserver localhost:8080
   
 
