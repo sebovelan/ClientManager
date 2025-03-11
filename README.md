@@ -33,7 +33,6 @@ This is a Django-based application with a REST API for managing clients (alta, b
 * │   └── haproxy.cfg  # HAProxy config
 * └── manage.py
 * └──templates/admin/index.html
-* 
 
 
 ## Setup
