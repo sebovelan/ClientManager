@@ -1,8 +1,14 @@
+from calendar import month
 from rest_framework import generics
 from rest_framework.response import Response
 from .models import Client
 from .serializers import ClientSerializer
+from django.shortcuts import render
 
+
+def get_clients(request):  # Simple name, no "home"
+    total_clients = Client.objects.count()  # Like "client.count"
+    return render(request, 'index.html', {'total_clients': total_clients})
 # Alta (Create)
 class ClientCreateView(generics.CreateAPIView):
     queryset = Client.objects.all()
@@ -43,4 +49,5 @@ class ClientDetailView(generics.RetrieveAPIView):
     queryset = Client.objects.all()
     serializer_class = ClientSerializer
 
-# Create your views here.
+
+

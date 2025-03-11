@@ -1,0 +1,16 @@
+{% extends "admin/base_site.html" %}
+
+{% block content %}
+<h1>Bienvenido {{ request.user.username }} a la página para el manejo de clientes</h1>
+<p>
+    Aquí puedes tener un control de tus clientes y realizar las siguientes operaciones <br>
+    1. Añadir cliente <br>
+    2. Actualizar informacion de clientes <br>
+    3. Borrar clientes <br>
+    4. Crear grupos <br>
+    <br>
+    Sebastián Ovelar
+		
+</p>
+{{ block.super }}
+{% endblock %}
