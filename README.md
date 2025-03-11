@@ -10,7 +10,7 @@ This is a Django-based application with a REST API for managing clients (alta, b
   - `PATCH /api/clients/<id>/update/`: Update a client (modificación).
   - `PUT /api/clients/<id>/delete/`: Soft-delete a client (baja).
   - Returns JSON responses.
-- **Authentication**: Token-based (DRF `authtoken`) tied to Admin users.
+- **Authentication**: Admin users. Create super user and key
 - **Database**: PostgreSQL on port `5432`.
 - **Load Balancing**: HAProxy on port `8080`, balancing Django instances.
 ## Project Structure
@@ -32,6 +32,8 @@ This is a Django-based application with a REST API for managing clients (alta, b
 * ├── haproxy/
 * │   └── haproxy.cfg  # HAProxy config
 * └── manage.py
+* └──templates/admin/index.html
+* 
 
 
 ## Setup
@@ -48,6 +50,7 @@ This is a Django-based application with a REST API for managing clients (alta, b
 2. **Install requirement** :
    ```bash
    pip install requirements.txt
+   python manage.py createsuperuser
 3. **Set a key for DJANGO, database name, user, password and optionally host and port** (for Windows CMD) :
    ```bash
    set DJANGO_SECRET_KEY=your-new-secret-key-here
