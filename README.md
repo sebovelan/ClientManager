@@ -41,15 +41,17 @@ This is a Django-based application with a REST API for managing clients (alta, b
 - HAProxy
 - Git
 
-### Installation
+#### Installation
 1. **Clone the Repository** (after GitHub push):
    ```bash
    git clone https://github.com/sebovelan/clientSystem.git
 2. **Install requirement** :
    ```bash
    pip install requirements.txt
-3. **Run server**
+3. **Set a key for DJANGO** (for Windows) :
+   ```bash
+   set DJANGO_SECRET_KEY=your-new-secret-key-here
+
+4. **Run Server** :
    ```bash
    python manage.py runserver localhost:8080
-  
-
