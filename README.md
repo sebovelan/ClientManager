@@ -48,9 +48,14 @@ This is a Django-based application with a REST API for managing clients (alta, b
 2. **Install requirement** :
    ```bash
    pip install requirements.txt
-3. **Set a key for DJANGO** (for Windows) :
+3. **Set a key for DJANGO, database name, user, password and optionally host and port** (for Windows CMD) :
    ```bash
    set DJANGO_SECRET_KEY=your-new-secret-key-here
+   set DB_NAME=mydb
+   set DB_USER=myuser
+   set DB_PASSWORD=mypassword
+   set DB_HOST=localhost
+   set DB_PORT=5432
 
 4. **Run Server** :
    ```bash
