@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 import os
+from dotenv import load_dotenv
+
+load_dotenv()  # Load environment variables from a .env file (if using python-dotenv)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -99,11 +102,14 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DB_NAME', 'default_db_name'),
-        'USER': os.getenv('DB_USER', 'default_user'),
-        'PASSWORD': os.getenv('DB_PASSWORD', 'default_password'),
-        'HOST': os.getenv('DB_HOST', 'localhost'),
-        'PORT': os.getenv('DB_PORT', '5432'),
+        'NAME': os.getenv('DB_NAME', 'ClientSystem'),
+        'USER': os.getenv('DB_USER', 'sebas'),
+        'PASSWORD': os.getenv('DB_PASSWORD', 'secret'),
+        'HOST':'localhost',
+        'PORT':'5432',
+        'OPTIONS': {
+            'client_encoding': 'UTF8',  # Explicitly set client encoding to UTF-8
+        },
     }
 }
 
