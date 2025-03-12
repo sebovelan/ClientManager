@@ -65,4 +65,4 @@ This is a Django-based application with a REST API for managing clients (alta, b
 
 4. **Run Server** :
    ```bash
-   python manage.py runserver localhost:8080
+   python manage.py runserver 0.0.0.0:8080
