@@ -6,9 +6,7 @@ from .serializers import ClientSerializer
 from django.shortcuts import render
 
 
-def get_clients(request):  # Simple name, no "home"
-    total_clients = Client.objects.count()  # Like "client.count"
-    return render(request, 'index.html', {'total_clients': total_clients})
+
 # Alta (Create)
 class ClientCreateView(generics.CreateAPIView):
     queryset = Client.objects.all()
@@ -48,6 +46,9 @@ class ClientListView(generics.ListAPIView):
 class ClientDetailView(generics.RetrieveAPIView):
     queryset = Client.objects.all()
     serializer_class = ClientSerializer
+from django.shortcuts import render
 
+def index(request):
+    return render(request, 'clients/index.html')
 
 
