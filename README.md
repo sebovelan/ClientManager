@@ -53,12 +53,16 @@ This is a Django-based application with a REST API for managing clients (alta, b
 3. **Set a key for DJANGO, database name, user, password and optionally host and port** (for Windows CMD) :
    ```bash
    set DJANGO_SECRET_KEY=your-new-secret-key-here
-   set DB_NAME=mydb
-   set DB_USER=myuser
-   set DB_PASSWORD=mypassword
-   set DB_HOST=localhost
-   set DB_PORT=5432
+4. **Database connect to ProgreSQL**
+   
+   By properly creating a database with a user, password, name and then changing the .env file:
+   ```bash
+   DB_NAME=ClientSystem
+   DB_USER=sebas
+   DB_PASSWORD=your-secure-password
+   DB_HOST=localhost
+   DB_PORT=5432
 
 4. **Run Server** :
    ```bash
-   python manage.py runserver localhost:8080
+   python manage.py runserver 0.0.0.0:8080
