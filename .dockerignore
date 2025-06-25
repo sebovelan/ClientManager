@@ -1,0 +1,14 @@
+# .dockerignore
+.git
+.gitignore
+.env
+__pycache__
+*.pyc
+*.sqlite3
+venv/
+node_modules/
+dist/
+build/
+*.DS_Store
+*.pytest_cache/
+media/ # If you store user uploaded media locally, don't copy it into the image
